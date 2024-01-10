@@ -14,5 +14,5 @@
     test
 </body>
 </html>
-tyfus
+kanker
 
