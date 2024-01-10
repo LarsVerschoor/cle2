@@ -14,5 +14,4 @@
     test
 </body>
 </html>
-nigger
 
