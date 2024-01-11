@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $wachtwoord = "wachtwoord";
 
     if ($_POST["gebruikersnaam"] == $gebruikersnaam && $_POST["wachtwoord"] == $wachtwoord) {
-        echo "<p>Welkom, $gebruikersnaam!</p>";
+        header('Location: /cle2/?????.php');
     } else {
         echo "<p>Ongeldige gebruikersnaam of wachtwoord.</p>";
     }
