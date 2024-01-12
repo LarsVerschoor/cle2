@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+}
+
+h2 {
+    margin: 0;
+}
+
+.login-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    padding: 10px;
+    border: 5px;
+    border-color: #ffd60a; /* Aangepaste kleur */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background-color: #000814; /* Aangepaste kleur */
+}
+
+.login-container img {
+    height: 400px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #003566; /* Aangepaste kleur */
+    height: 400px;
+}
+
+.login-table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    background-color: #FAF4D7; /* Aangepaste kleur */
+}
+
+.login {
+    border: 5px solid;
+    border-color: #ffd60a; /* Aangepaste kleur */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+@media (max-width: 780px) {
+
+}
