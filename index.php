@@ -21,7 +21,7 @@
 
     </main>
     <footer>
-        Website gemaakt door Brandon, Lars, Trev & Niko(Niko cap).
+        Website gemaakt door Brandon, Lars, Trev & Niko.
     </footer>
 </body>
 </html>
