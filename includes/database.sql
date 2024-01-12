@@ -8,4 +8,4 @@ CREATE TABLE admins (
                         password VARCHAR(255)
 );
 
-INSERT INTO admins (username, password) VALUES ('admin', 'admin');
+INSERT INTO admins (username, password) VALUES ('admin', '$2y$10$AMux3z.fgceF2zQualXc0..AdVsXo6Q8LjwQBklc6JAPfUtsLqfhO');
