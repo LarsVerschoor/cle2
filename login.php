@@ -27,7 +27,7 @@
 
             <button class="submit-button"   type="submit">Log in</button>
         </form>
-        <img src="/images/man-met-duimen-omhoog_1154-467.avif
+        <img src="images/man-met-duimen-omhoog_1154-467.avif
 " alt="">
 
     </div>
