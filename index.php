@@ -11,8 +11,9 @@
     <nav>
         <a href="">link</a>
         <a href="">link</a>
-        <a href="">link</a>
-        <a href="login.php">Admin login</a>
+        <a href="signup-customer.php">Klant registreren</a>
+        <a href="login-customer.php">klant login</a>
+        <a href="login-admin.php">Admin login</a>
     </nav>
     <header>
         <h1>Homepage</h1>
