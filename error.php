@@ -9,5 +9,6 @@
 </head>
 <body>
     <h2>An error occured on the server</h2>
+    <a href="/">Return to the home-page.</a>
 </body>
 </html>
