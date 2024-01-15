@@ -6,6 +6,7 @@
 
 body {
     margin: 0;
+    padding: .8rem;
     background-color: #efefef;
     font-family: "Open Sans", sans-serif;
     background-image: url(../images/authentication-customer-background-image.jpg);
@@ -82,6 +83,11 @@ button:hover {
 a.back {
     display: block;
     margin-bottom: .5rem;
+    padding: .4rem .8rem;
+    border-radius: .3rem;
+    background-color: #fff;
+    border: 2px solid #000;
+    width: max-content;
 }
 
 a {

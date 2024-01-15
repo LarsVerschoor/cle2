@@ -25,7 +25,7 @@ if (isset($_POST['submit'])) {
     }
 
     // get saved input
-    $savedInput['email'] = $_POST['email'] || '';
+    $savedInput['email'] = $_POST['email'] ?? '';
 
     if (count($errors) === 0) {
         // retrieve customer from database
@@ -46,7 +46,7 @@ if (isset($_POST['submit'])) {
                 mysqli_close($db);
                 exit;
             } else {
-                $errors['general'] = 'Onjuist wachtwoord';
+                $errors['password'] = 'Onjuist wachtwoord';
             }
         }
     }
