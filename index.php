@@ -11,7 +11,7 @@
     <nav>
         <a href="">link</a>
         <a href="">link</a>
-        <a href="signup-customer.php">Klant registreren</a>
+        <a href="register-customer.php">Klant registreren</a>
         <a href="login-customer.php">klant login</a>
         <a href="login-admin.php">Admin login</a>
     </nav>
