@@ -16,7 +16,7 @@
         $savedInput = [];
 
         $postUsername = mysqli_escape_string($db, $_POST['username'] ?? '');
-        $postPassword = mysqli_escape_string($db, $_POST['password'] ?? '');
+        $postPassword = $_POST['password'] ?? '';
 
         if ($postUsername === '') {
             $errors['username'] = 'Dit veld is verplicht';

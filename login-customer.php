@@ -18,10 +18,12 @@
             <div class="form-row">
                 <label for="email">E-mail</label>
                 <input type="text" name="email" id="email">
+                <div class="form-error"></div>
             </div>
             <div class="form-row">
                 <label for="password">Wachtwoord</label>
                 <input type="password" name="password" id="password">
+                <div class="form-error"></div>
             </div>
 
             <button type="submit" name="submit" value="submit">Log in</button>
