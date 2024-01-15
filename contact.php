@@ -18,6 +18,9 @@
         <a href="#home">Home</a>
         <a href="#contact">Contact</a>
         <a href="#about">About</a>
+        <a href="login-customer.php">Klant login</a>
+        <a href="register-customer.php">Klant registreren</a>
+        <a href="login-admin.php">Admin login</a>
     </nav>
 
 
