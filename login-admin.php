@@ -1,63 +1,65 @@
 <?php
 
-    session_start();
+session_start();
 
 //    if (isset($_SESSION['admin'])) {
 //        header('Location: index.php');
 //        exit;
 //    }
 
-    require_once('includes/database.php');
-    /** @var mysqli $db */
+require_once('includes/database.php');
+/** @var mysqli $db */
 
-    if (isset($_POST['submit'])) {
-        // validation
-        $errors = [];
-        $savedInput = [];
+$errors = [];
+$savedInput = [];
 
-        $postUsername = mysqli_escape_string($db, $_POST['username'] ?? '');
-        $postPassword = $_POST['password'] ?? '';
+if (isset($_POST['submit'])) {
+    // validation
 
-        if ($postUsername === '') {
-            $errors['username'] = 'Dit veld is verplicht';
-        }
-        if (strlen($postUsername) > 30) {
-            $errors['username'] = 'Dit veld kan niet langer zijn dan 30 tekens';
-        }
-        if ($postPassword === '') {
-            $errors['password'] = 'Dit veld is verplicht';
-        }
+    $postUsername = mysqli_escape_string($db, $_POST['username'] ?? '');
+    $postPassword = $_POST['password'] ?? '';
 
-        // set saved input
-        $savedInput['username'] = $_POST['username'] ?? '';
-
-        // get db user
-        if (count($errors) === 0) {
-
-
-            $query = "SELECT * FROM admins WHERE username = '$postUsername'";
-            $result = mysqli_query($db, $query) or die();
-            if (mysqli_num_rows($result) !== 1) {
-                header('Location: error.php');
-                mysqli_close($db);
-                exit;
-            }
-
-            $databaseUser = mysqli_fetch_assoc($result);
-
-            // compare with database password
-            $match = password_verify($postPassword, $databaseUser['password']);
-
-            if ($match) {
-                $_SESSION['admin'] = $databaseUser['id'];
-                header('Location: index.php');
-                exit;
-            }
-
-            $errors['general'] = 'Gebruikersnaam of wachtwoord is incorrect';
-        }
-
+    if ($postUsername === '') {
+        $errors['username'] = 'Dit veld is verplicht';
     }
+    if (strlen($postUsername) > 30) {
+        $errors['username'] = 'Dit veld kan niet langer zijn dan 30 tekens';
+    }
+    if ($postPassword === '') {
+        $errors['password'] = 'Dit veld is verplicht';
+    }
+
+    // set saved input
+    $savedInput['username'] = $_POST['username'] ?? '';
+
+    // get db user
+    if (count($errors) === 0) {
+
+
+        $query = "SELECT * FROM admins WHERE username = '$postUsername'";
+        $result = mysqli_query($db, $query) or die();
+        if (mysqli_num_rows($result) !== 1) {
+            header('Location: error.php');
+            mysqli_close($db);
+            exit;
+        }
+
+        $databaseUser = mysqli_fetch_assoc($result);
+
+        // compare with database password
+        $match = password_verify($postPassword, $databaseUser['password']);
+
+        if ($match) {
+            $_SESSION['admin'] = $databaseUser['id'];
+            header('Location: index.php');
+            mysqli_close($db);
+            exit;
+        }
+
+        $errors['general'] = 'Gebruikersnaam of wachtwoord is incorrect';
+    }
+
+}
 
 ?>
 

@@ -1,3 +1,9 @@
+<?php
+
+session_start();
+
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -17,6 +23,8 @@
     </nav>
     <header>
         <h1>Homepage</h1>
+        <div><?= isset($_SESSION['admin']) ? 'Je bent ingelogd als admin' : '' ?></div>
+        <div><?= isset($_SESSION['customer']) ? 'Je bent ingelogd als klant' : '' ?></div>
     </header>
     <main>
 
