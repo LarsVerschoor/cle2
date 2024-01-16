@@ -60,7 +60,9 @@ nav input[type="text"]::placeholder {
 }
 
 h1 {
-    margin-left: 0.5rem;
+    text-align: center;
+    margin-left: auto;
+    font-size: 3rem;
 }
 
 .products {
@@ -72,7 +74,7 @@ h1 {
 }
 
 h2 {
-    font-size: 3rem;
+    font-size: 2.25rem;
     text-align: center;
 }
 

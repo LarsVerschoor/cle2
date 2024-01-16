@@ -30,7 +30,7 @@ session_start();
 <main>
     <header>
         <section class="homepage">
-            <h1></h1>
+            <h1>Stap in stijl met Kiryan BV</h1>
             <div>
                 <form action="">
                     <div class="custom-select" style="width:200px;">
