@@ -62,7 +62,7 @@ mysqli_close($db);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/authentication-customer.css">
+    <link rel="stylesheet" href="/css/authentication-customer.css">
     <title>klant registreren | Kiryan B.V.</title>
 </head>
 <body>
