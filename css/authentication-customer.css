@@ -11,7 +11,7 @@ body {
     background-image: url(../images/authentication-customer-background-image.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: fixed;
+    background-position: center;
 }
 
 main {
