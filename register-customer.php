@@ -46,7 +46,7 @@ if (isset($_POST['submit'])) {
         mysqli_query($db, $query);
 
         // Redirect to index
-        header('Location: login.php');
+        header('Location: login-customer.php');
         mysqli_close($db);
         exit;
     }

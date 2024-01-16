@@ -6,13 +6,12 @@
 
 body {
     margin: 0;
-    padding: .8rem;
     background-color: #efefef;
     font-family: "Open Sans", sans-serif;
     background-image: url(../images/authentication-customer-background-image.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: fixed;
 }
 
 main {
@@ -20,6 +19,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: .8rem;
 }
 
 form {

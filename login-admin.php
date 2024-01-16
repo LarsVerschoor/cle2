@@ -74,7 +74,6 @@ if (isset($_POST['submit'])) {
 </head>
 <body>
 
-
 <section class="login-container">
     <div class="login">
         <form class="form-container" action="" method="post">
@@ -104,6 +103,12 @@ if (isset($_POST['submit'])) {
 
 </section>
 
+<footer>
+    Kiyran B.V.
+    Bloklandweg 1A
+    4171 KA Herwijnen
+    info@kiryanbv.nl
+</footer>
 
 </body>
 </html>
