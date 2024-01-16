@@ -92,5 +92,13 @@ mysqli_close($db);
 
 
 </main>
+
+<footer>
+    Kiyran B.V.
+    Bloklandweg 1A
+    4171 KA Herwijnen
+    info@kiryanbv.nl
+</footer>
+
 </body>
 </html>
