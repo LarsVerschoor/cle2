@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/*  font-family: "Open Sans",
+  sans-serif; */
+* {
+    box-sizing: border-box;
+    font-family: "Open Sans",
+    sans-serif;
+}
+
+
+body {
+    margin: 0;
+}
+
+nav {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: center;
+    border-bottom: 2px solid #000814;
+    align-items: center;
+    background-color: #003566;
+    height: 3.5rem;
+}
+
+nav img {
+    height: 3rem;
+}
+
+
+nav input[type="text"] {
+    border: none;
+    border-radius: 0.3rem;
+    width: 50vw;
+    padding: 0.5rem;
+    font-size: 1rem;
+    margin: 0 auto;
+}
+
+nav input[type="text"]::placeholder {
+    color: #000814;
+}
+
+.kiryan-logo {
+    margin-left: 3%;
+    margin-right: auto;
+    width: 5rem;
+    height: 3rem;
+    border: solid #003566;
+    border-radius: 0.5rem;
+}
+
+.footer-logo {
+    border: solid #003566;
+    border-radius: 0.5rem;
+    width: 5rem;
+    height: 3rem;
+}
+
+h1 {
+    margin-left: 0.5rem;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    text-align: start;
+}
+
+h2 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+h3,
+h4,
+h5 {
+    display: block;
+    font-size: 1.6rem;
+    margin-block-start: 1rem;
+    margin-block-end: 1rem;
+    margin-inline-start: 10px;
+    font-weight: bold;
+}
+
+.product-section {
+    border-bottom: 2px solid #000000;
+    padding-bottom: 50px;
+}
+
+.products p {
+    display: block;
+    font-size: 1rem;
+    margin-inline-start: 10px;
+    margin-bottom: 2rem;
+}
+
+.products article {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    max-width: 350px;
+    max-height: 30%;
+    position: relative;
+}
+
+.products article img {
+    width: 100%;
+    height: 30vh;
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+    align-items: flex-start;
+}
+
+.button-container {
+    margin-top: auto;
+}
+
+a.button-assignment {
+    padding: 10px;
+    color: #001d3d;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 3px solid #ffd60a;
+    background-color: #ffd60a;
+    margin-inline-start: 10px;
+    margin-block-start: 1rem;
+    margin-block-end: 2rem;
+    max-height: 100%;
+    max-width: 100%;
+    display: inline-block;
+}
+
+a.button-assignment:hover {
+    color: #ffc300;
+    background-color: #000814;
+    border: solid #000814;
+    transition: 0.2s;
+}
+
+form {
+    max-width: 15rem;
+    margin-left: 0.3rem;
+    margin-bottom: 1rem;
+    padding: 20px;
+    border: 1px solid #000814;
+    border-radius: 5px;
+    background-color: #001d3d;
+    color: #FAF4D7;
+    display: none;
+}
+
+.toggleFormBtn {
+    width: 12rem;
+    background-color: #001d3d;
+    color: #FAF4D7;
+    padding: 0.5rem;
+    margin: 0.3rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.toggleFormBtn:hover {
+    background-color: #FAF4D7;
+    color: #001d3d;
+    transition: 0.2s;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+option {
+    background-color: #FAF4D7;
+}
+
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    width: 12rem;
+    background-color: #ffd60a;
+    color: #000814;
+    padding: 0.7rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #ffc300;
+}
+
+
+
+footer {
+    /* display: flex;
+    justify-content: flex-end; */
+    padding: 10px;
+    /* gap: 25px;
+    border-bottom: 2px solid #000814;
+    align-items: center; */
+    background-color: #003566;
+    min-height: 3.5rem;
+    color: #FAF4D7;
+}
+
+footer img {
+    height: 2.5rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #FAF4D7;
+}
