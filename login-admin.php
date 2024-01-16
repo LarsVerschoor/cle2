@@ -77,7 +77,7 @@ if (isset($_POST['submit'])) {
 <section class="login-container">
     <div class="login">
         <form class="form-container" action="" method="post">
-            <a href="index.html" class="back-button">&#9665; Terug</a>
+            <a href="http://localhost/cle2/index.php" class="back-button">&#9665; Terug</a>
             <h2>Log In</h2>
 
             <div class="error"><?= $errors['general'] ?? '' ?></div>
