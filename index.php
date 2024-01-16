@@ -30,7 +30,7 @@ session_start();
 <main>
     <header>
         <section class="homepage">
-            <h1>Producten</h1>
+            <h1></h1>
             <div>
                 <form action="">
                     <div class="custom-select" style="width:200px;">
@@ -45,7 +45,6 @@ session_start();
                     <br><br>
                     <input type="submit" value="Submit">
                 </form>
-                <button class="toggleFormBtn" id="toggleFormBtn">Filter</button>
 
                 <section class="product-section">
                     <h2> Populaire producten </h2>
