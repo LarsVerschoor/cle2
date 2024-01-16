@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.navbar {
+    background-color: #003566;
+    padding: 10px;
+    text-align: center;
+}
+
+.navbar a {
+    color: #ffd60a;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+}
+footer {
+    background-color: #001d3d;
+    color: #ffd60a;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 10px;
+    margin-top: auto;
+}
+.product {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-info {
+    margin-top: 20px;
+}
