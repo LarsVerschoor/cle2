@@ -46,16 +46,7 @@ session_start();
                     <input type="submit" value="Submit">
                 </form>
                 <button class="toggleFormBtn" id="toggleFormBtn">Filter</button>
-                <script>
-                    document.addEventListener('DOMContentLoaded', function () {
-                        var form = document.querySelector('form');
-                        var toggleFormBtn = document.getElementById('toggleFormBtn');
 
-                        toggleFormBtn.addEventListener('click', function () {
-                            form.style.display = (form.style.display === 'none') ? 'block' : 'none';
-                        });
-                    });
-                </script>
                 <section class="product-section">
                     <h2> Populaire producten </h2>
                     <div class="products">
@@ -125,7 +116,7 @@ session_start();
                 info@kiryanbv.nl</p>
         </div>
         <div class="footer-links">
-            <a href="">
+            <a href="contact.php">
                 <img class="menu-logo" src="images/Kiryan B.V. Iconen contact.png" alt="menu">
             </a>
         </div>
