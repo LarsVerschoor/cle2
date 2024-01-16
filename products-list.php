@@ -12,16 +12,6 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/index.css">
-    <script>
-        $(document).ready(function(){
-            $("#hide").click(function(){
-                $("p").hide();
-            });
-            $("#show").click(function(){
-                $("p").show();
-            });
-        });
-    </script>
 </head>
 
 <body>
@@ -67,7 +57,7 @@ session_start();
                     });
                 </script>
                 <section class="product-section">
-                    <h2> Populaire producten </h2>
+                    <h2> Alle producten </h2>
                     <div class="products">
 
 
@@ -120,9 +110,6 @@ session_start();
                         </article>
                     </div>
                     <div class="all-products">
-
-                    <button id="hide">Hide</button>
-                    <button id="show">Show</button>
                 </div>
                 </section>
             </div>
