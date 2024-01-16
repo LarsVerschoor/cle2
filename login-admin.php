@@ -73,7 +73,7 @@ if (isset($_POST['submit'])) {
     <title>Inloggen | Kiryan B.V.</title>
 </head>
 <body>
-
+<body background="images/authentication-customer-background-image.jpg.jpg">
 
 <section class="login-container">
     <div class="login">
