@@ -146,39 +146,6 @@ a.button-assignment:hover {
     transition: 0.2s;
 }
 
-form {
-    display: none;
-    z-index: 1000;
-    position: fixed;
-    max-width: 15rem;
-    margin-top: 5rem;
-    margin-left: 0.3rem;
-    margin-bottom: 1rem;
-    padding: 20px;
-    border: 1px solid #000814;
-    border-radius: 5px;
-    background-color: #001d3d;
-    color: #FAF4D7;
-}
-
-.toggleFormBtn {
-    position :fixed;
-    width: 12rem;
-    background-color: #001d3d;
-    color: #FAF4D7;
-    padding: 0.5rem;
-    margin: 2rem 1rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.toggleFormBtn:hover {
-    background-color: #FAF4D7;
-    color: #001d3d;
-    transition: 0.2s;
-}
-
 label {
     display: block;
     margin-bottom: 8px;
