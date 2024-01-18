@@ -5,7 +5,7 @@ session_start();
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 
 <head>
     <meta charset="UTF-8">
@@ -18,11 +18,13 @@ session_start();
 
 <nav>
     <img class="kiryan-logo" src="images/Logosafbeeldingen.png" alt="logo">
+        <form class="search-bar" action="">
     <input type="text" id="searchInput" placeholder="Zoek een product...">
+        </form>
     <a href="">
         <img class="cart-logo" src="images/Kiryan B.V. Iconen winkelmand.png" alt="winkelmand">
     </a>
-    <a href="">
+    <a href="login-customer.php">
         <img class="account-logo" src="images/Kiryan B.V. Iconen account.png" alt="account">
     </a>
 </nav>
@@ -30,7 +32,6 @@ session_start();
 <main>
     <header>
         <section class="homepage">
-            <h1></h1>
             <div>
                 <form action="" class="filter-form">
                     <div class="custom-select" style="width:200px;">
@@ -48,7 +49,7 @@ session_start();
                 <button class="toggleFormBtn" id="toggleFormBtn">Filter</button>
                 <script>
                     document.addEventListener('DOMContentLoaded', function () {
-                        var form = document.querySelector('form');
+                        var form = document.querySelector('.filter-form');
                         var toggleFormBtn = document.getElementById('toggleFormBtn');
 
                         toggleFormBtn.addEventListener('click', function () {
@@ -109,8 +110,6 @@ session_start();
 
                         </article>
                     </div>
-                    <div class="all-products">
-                </div>
                 </section>
             </div>
         </section>
@@ -126,6 +125,9 @@ session_start();
                 info@kiryanbv.nl</p>
         </div>
         <div class="footer-links">
+            <a class="login-admin-link" href="login-admin.php" >
+                Admin
+            </a>
             <a href="contact.php">
                 <img class="menu-logo" src="images/Kiryan B.V. Iconen contact.png" alt="menu">
             </a>

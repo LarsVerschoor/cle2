@@ -23,13 +23,14 @@ nav {
     background-color: #003566;
     height: 3.5rem;
     position: fixed;
-    width: 100vw; /* Fix: Use 100vw instead of 100vh */
+    width: 100vw;
     top: 0;
     z-index: 100;
 }
 
 nav img {
     height: 3rem;
+    margin-right: 1rem;
 }
 
 
@@ -39,11 +40,15 @@ nav input[type="text"] {
     width: 50vw;
     padding: 0.5rem;
     font-size: 1rem;
-    margin: 0 auto;
+    margin: auto;
 }
 
 nav input[type="text"]::placeholder {
     color: #000814;
+}
+
+.search-bar {
+    margin-right: auto;
 }
 
 .kiryan-logo {
@@ -63,6 +68,8 @@ nav input[type="text"]::placeholder {
 }
 
 h1 {
+    font-size: 3rem;
+    padding-top: 2rem;
     margin-left: 0.5rem;
 }
 
@@ -75,6 +82,7 @@ h1 {
 }
 
 h2 {
+    padding-top: 1rem;
     font-size: 3rem;
     text-align: center;
 }
@@ -92,7 +100,6 @@ h5 {
 
 .product-section {
     border-bottom: 2px solid #000000;
-    padding-bottom: 50px;
 }
 
 .products p {
@@ -110,6 +117,7 @@ h5 {
     max-width: 350px;
     max-height: 30%;
     position: relative;
+    margin-bottom: 2rem;
 }
 
 .products article img {
@@ -118,6 +126,27 @@ h5 {
     border-radius: 10px 10px 0 0;
     object-fit: cover;
     align-items: flex-start;
+}
+
+.button-div{
+ display: flex;
+    justify-content: center;
+}
+
+.all-products-button {
+    padding: 10px;
+    color: #001d3d;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 3px solid #ffd60a;
+    background-color: #ffd60a;
+    margin-inline-start: 10px;
+    margin-block-start: 1rem;
+    margin-block-end: 2rem;
+    max-height: 100%;
+    max-width: 100%;
+    display: inline-block;
+    margin-top: 1rem;
 }
 
 .button-container {
@@ -146,7 +175,7 @@ a.button-assignment:hover {
     transition: 0.2s;
 }
 
-form {
+.filter-form {
     display: none;
     z-index: 1000;
     position: fixed;
@@ -226,6 +255,7 @@ footer {
 
 footer img {
     height: 2.5rem;
+    margin-right: 1rem;
 }
 
 .footer-content {
@@ -238,9 +268,11 @@ footer img {
 .footer-links {
     display: flex;
     gap: 20px;
+    align-items: center;
 }
 
 .footer-links a {
     text-decoration: none;
     color: #FAF4D7;
 }
+
