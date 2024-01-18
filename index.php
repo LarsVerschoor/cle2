@@ -22,7 +22,7 @@ session_start();
     <a href="">
         <img class="cart-logo" src="images/Kiryan B.V. Iconen winkelmand.png" alt="winkelmand">
     </a>
-    <a href="">
+    <a href="login-customer.php">
         <img class="account-logo" src="images/Kiryan B.V. Iconen account.png" alt="account">
     </a>
 </nav>
