@@ -171,6 +171,7 @@ form {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    z-index: 100;
 }
 
 .toggleFormBtn:hover {
