@@ -13,8 +13,6 @@ body {
     margin: 0;
 }
 
-
-
 nav {
     padding: 10px;
     display: flex;
@@ -24,6 +22,10 @@ nav {
     border-bottom: 2px solid #000814;
     background-color: #003566;
     height: 3.5rem;
+    position: fixed;
+    width: 100vw; /* Fix: Use 100vw instead of 100vh */
+    top: 0;
+    z-index: 100;
 }
 
 nav img {
@@ -61,9 +63,7 @@ nav input[type="text"]::placeholder {
 }
 
 h1 {
-    text-align: center;
-    margin-left: auto;
-    font-size: 3rem;
+    margin-left: 0.5rem;
 }
 
 .products {
@@ -75,7 +75,7 @@ h1 {
 }
 
 h2 {
-    font-size: 2.25rem;
+    font-size: 3rem;
     text-align: center;
 }
 
