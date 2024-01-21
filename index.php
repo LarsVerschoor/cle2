@@ -18,11 +18,13 @@ session_start();
 
 <nav>
     <img class="kiryan-logo" src="images/Logosafbeeldingen.png" alt="logo">
-    <input type="text" id="searchInput" placeholder="Zoek een product...">
+    <form class="search-bar" action="">
+        <input type="text" id="searchInput" placeholder="Zoek een product...">
+    </form>
     <a href="">
         <img class="cart-logo" src="images/Kiryan B.V. Iconen winkelmand.png" alt="winkelmand">
     </a>
-    <a href="">
+    <a href="login-customer.php">
         <img class="account-logo" src="images/Kiryan B.V. Iconen account.png" alt="account">
     </a>
 </nav>
@@ -30,33 +32,10 @@ session_start();
 <main>
     <header>
         <section class="homepage">
-            <h1>Producten</h1>
-            <div>
-                <form action="">
-                    <div class="custom-select" style="width:200px;">
-                        <label for="tegelsoorten">Filter op tegels:</label>
-                        <select name="tiles" id="tiles">
-                            <option value="floor-tiles">Vloer tegels</option>
-                            <option value="garden-tiles">Tuin tegels</option>
-                            <option value="wall-tiles">Wand tegels</option>
-                            <option value="mosaic">Mozaiek tegels</option>
-                        </select>
-                    </div>
-                    <br><br>
-                    <input type="submit" value="Submit">
-                </form>
-                <button class="toggleFormBtn" id="toggleFormBtn">Filter</button>
-                <script>
-                    document.addEventListener('DOMContentLoaded', function () {
-                        var form = document.querySelector('form');
-                        var toggleFormBtn = document.getElementById('toggleFormBtn');
+            <h1>Stap in stijl met Kiryan BV</h1>
 
-                        toggleFormBtn.addEventListener('click', function () {
-                            form.style.display = (form.style.display === 'none') ? 'block' : 'none';
-                        });
-                    });
-                </script>
-                <section class="product-section">
+
+                <div class="product-section">
                     <h2> Populaire producten </h2>
                     <div class="products">
 
@@ -106,13 +85,14 @@ session_start();
                                     <a href="" target="_blank" class="button-assignment">Meer details</a>
                                 </div>
                             </div>
-
                         </article>
-
                     </div>
+                    <div class="button-div">
+                    <a class="all-products-button" href="products-list.php">
+                        Alle producten
+                    </a>
+                </div>
                 </section>
-            </div>
-        </section>
     </header>
 </main>
 <footer>
@@ -125,7 +105,10 @@ session_start();
                 info@kiryanbv.nl</p>
         </div>
         <div class="footer-links">
-            <a href="">
+            <a class="login-admin-link" href="login-admin.php" >
+                Admin
+            </a>
+            <a href="contact.php">
                 <img class="menu-logo" src="images/Kiryan B.V. Iconen contact.png" alt="menu">
             </a>
         </div>
