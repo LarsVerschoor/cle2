@@ -22,7 +22,7 @@ session_start();
         <input type="text" id="searchInput" name="search" placeholder="Zoek een product...">
         <input type="hidden" name="submit" value="submit">
     </form>
-    <a href="">
+    <a href="shoppingcart.php">
         <img class="cart-logo" src="images/Kiryan B.V. Iconen winkelmand.png" alt="winkelmand">
     </a>
     <a href="login-customer.php">
@@ -32,68 +32,7 @@ session_start();
 
 <main>
     <header>
-        <section class="homepage">
-            <h1>Stap in stijl met Kiryan BV</h1>
-
-
-                <div class="product-section">
-                    <h2> Populaire producten </h2>
-                    <div class="products">
-
-
-                        <article class="product-article">
-                            <div class="product-card">
-                                <img src="https://scontent-ams2-1.xx.fbcdn.net/v/t39.30808-6/384099332_6386599158118438_6969631507200926178_n.jpg?stp=dst-jpg_p843x403&_nc_cat=105&ccb=1-7&_nc_sid=dd5e9f&_nc_ohc=6RraxetEVwYAX_QXdKN&_nc_ht=scontent-ams2-1.xx&oh=00_AfDtXm_sefinvAfUKNP53Dl_KDvjuCwiUmkJKYu8UXEwGA&oe=65AA49C8"
-                                     alt="Acuarella-tegels">
-
-                                <h3>Acuarella keramiek tegels</h3>
-                                <p>Soort: Wand tegels</p>
-                                <p>Prijs: €16,25 per vierkante meter</p>
-                                <p> Materiaal: Keramiek </p>
-                                <div class="button-container">
-                                    <a href="" target="_blank" class="button-assignment">Meer details</a>
-                                </div>
-                            </div>
-
-                        </article>
-
-                        <article class="product-article">
-                            <div class="product-card">
-                                <img src="https://www.hegobuiten.nl/lcms2/RESIZE/w1920-h1920-q80/bestanden/cache/store/hego/73989/travertin-economix-203x203x3-cm-soft-finish.jpg"
-                                     alt="Travertijn-tegels">
-
-                                <h4>Travertijn natuur tegels</h4>
-                                <p>Soort: Tuin tegels</p>
-                                <p>Prijs: €50,- per vierkante meter</p>
-                                <p>Materiaal: Natuursteen</p>
-                                <div class="button-container">
-                                    <a href="" target="_blank" class="button-assignment">Meer details</a>
-                                </div>
-                            </div>
-
-                        </article>
-
-                        <article class="product-article">
-                            <div class="product-card">
-                                <img src="https://cdn.webshopapp.com/shops/322791/files/404849059/image.jpg"
-                                     alt="Arabesque-tegels">
-
-                                <h5>Arabesque tegels</h5>
-                                <p>Soort: Vloer tegels</p>
-                                <p>Prijs: €44,- per vierkante meter</p>
-                                <p>Materiaal: Porselein</p>
-                                <div class="button-container">
-                                    <a href="" target="_blank" class="button-assignment">Meer details</a>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="button-div">
-                    <a class="all-products-button" href="products-list.php">
-                        Alle producten
-                    </a>
-                </div>
-                </section>
+    <h1>Stap in stijl met Kiryan BV</h1>
     </header>
 </main>
 <footer>
