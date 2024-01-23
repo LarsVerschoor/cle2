@@ -8,21 +8,33 @@ body {
 }
 
 .product {
-    border: 1px solid #ddd;
+    border: 2px solid #e0e0e0;
     padding: 1em;
     margin: 1em;
     background-color: #fff;
-    max-width: 200px;
+    max-width: 300px;
     text-align: center;
     display: inline-block;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.product:hover {
+    transform: scale(1.05);
 }
 
 button {
-    background-color: #333;
+    background-color: #007bff;
     color: #fff;
     border: none;
-    padding: 0.5em 1em;
+    padding: 0.7em 1.5em;
     cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #0056b3;
 }
 
 #cart {
@@ -33,6 +45,7 @@ button {
     color: #fff;
     padding: 1em;
     display: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 #cart ul {
@@ -50,13 +63,12 @@ button {
     align-items: center;
     justify-content: center;
     display: flex;
-    padding: 10px;
+    padding: 20px;
     margin-top: auto;
 }
 
-
 .price-section {
-    font-size: 16px;
+    font-size: 18px;
     color: #333;
-    margin-top: 10px;
+    margin-top: 15px;
 }
