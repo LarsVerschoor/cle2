@@ -63,7 +63,7 @@ while ($row = mysqli_fetch_assoc($result)) {
                 <?php endforeach; ?>
             </ul>
             <p>Totaal: €<span id="cart-total">0.00</span></p>
-            <button onclick="checkout()">Uitchecken</button>
+            <button onclick="checkout()">Reserveren</button>
         </div>
     </section>
 </main>
