@@ -18,8 +18,9 @@ session_start();
 
 <nav>
     <img class="kiryan-logo" src="images/Logosafbeeldingen.png" alt="logo">
-    <form class="search-bar" action="">
-        <input type="text" id="searchInput" placeholder="Zoek een product...">
+    <form class="search-bar" action="products-list.php">
+        <input type="text" id="searchInput" name="search" placeholder="Zoek een product...">
+        <input type="hidden" name="submit" value="submit">
     </form>
     <a href="">
         <img class="cart-logo" src="images/Kiryan B.V. Iconen winkelmand.png" alt="winkelmand">

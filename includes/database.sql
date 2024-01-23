@@ -53,6 +53,22 @@ CREATE TABLE products (
     FOREIGN KEY (category_id) REFERENCES categories(id)
 );
 
+INSERT INTO materials (name, description) VALUES ('Marmer', 'Een witte steensoort met strepen');
+INSERT INTO materials (name, description) VALUES ('Graniet', 'Een grijze steensoort met veel textuur');
+INSERT INTO materials (name, description) VALUES ('Keramiek', 'Een gebakken aardewerk met een glazuurlaag');
+
+INSERT INTO categories (name, description) VALUES ('Stenen tegels (buiten en binnen)', 'Deze stenen tegels zijn geschikt voor buiten en binnen.');
+INSERT INTO categories (name, description) VALUES ('Wasbakken', 'Een wasbak voor onder een kraan');
+
+INSERT INTO products (name, description, price, unit, material_id, category_id, stock, available)
+VALUES ('Stenen tegels van marmer', 'Stenen tegels 24x40cm x kg / m² x dik', 40.50, 'm²', 1, 1, 80, 1);
+
+INSERT INTO products (name, description, price, unit, material_id, category_id, stock, available)
+VALUES ('Stenen tegels van graniet', 'Stenen tegels 24x40cm y kg / m² y mm dik', 30.50, 'm²', 2, 1, 80, 1);
+
+INSERT INTO products (name, description, price, unit, material_id, category_id, stock, available)
+VALUES ('Keramieke wasbak', 'Witte wasbak van keramiet kleur: x, gewicht: x, x, x, x, y, g', 30.50, 'm²', 3, 2, 80, 1);
+
 CREATE TABLE reservations (
     id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     customer_id BIGINT UNSIGNED,
@@ -63,7 +79,7 @@ CREATE TABLE reservations (
 );
 
 CREATE TABLE shopping_cart_items (
-    customer_id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    customer_id BIGINT UNSIGNED,
     product_id BIGINT UNSIGNED,
     quantity SMALLINT UNSIGNED,
     added_at DATETIME DEFAULT (CURRENT_DATE),

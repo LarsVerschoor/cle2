@@ -81,19 +81,19 @@ if (isset($_POST['submit'])) {
         $errors['product_stock'] = 'Dit veld kan niet leeg zijn';
     }
 
-    $targetDir = "uploads/";
-    $fileName = basename($product_name);
-
-    $targetFile = $targetDir . $fileName;
-    if (count($errors) === 0) {
-        if ($_FILES["product_image"]["error"] == 0) {
-            if (!move_uploaded_file($_FILES["product_image"]["tmp_name"], $targetFile)) {
-                $errors['product_image'] = 'Deze afbeelding werkt niet.';
-            }
-        } else {
-            $errors['product_image'] = 'Deze afbeelding werkt niet.';
-        }
-    }
+//    $targetDir = "uploads/";
+//    $fileName = basename($product_name);
+//
+//    $targetFile = $targetDir . $fileName;
+//    if (count($errors) === 0) {
+//        if ($_FILES["product_image"]["error"] == 0) {
+//            if (!move_uploaded_file($_FILES["product_image"]["tmp_name"], $targetFile)) {
+//                $errors['product_image'] = 'Deze afbeelding werkt niet.';
+//            }
+//        } else {
+//            $errors['product_image'] = 'Deze afbeelding werkt niet.';
+//        }
+//    }
 
     if (count($errors) === 0) {
         $query =

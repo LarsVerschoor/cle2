@@ -1,3 +1,34 @@
+<?php
+
+session_start();
+
+if (!isset($_SESSION['customer'])) {
+    header('Location: login-customer.php');
+    exit;
+}
+
+require_once ("includes/database.php");
+/** @var mysqli $db */
+
+$customer = $_SESSION['customer'];
+
+if (isset($_POST['submit'])) {
+    $productId = mysqli_escape_string($db, $_POST['product'] ?? '');
+    if ($productId !== '') {
+        $query = "INSERT INTO shopping_cart_items (product_id, customer_id, quantity) VALUES ('$productId', '$customer', 1)";
+        mysqli_query($db, $query);
+    }
+}
+
+$products = [];
+
+$query = "SELECT * FROM shopping_cart_items s INNER JOIN customers ON customers.id = s.customer_id LEFT JOIN products ON s.product_id = products.id WHERE s.customer_id = $customer";
+$result = mysqli_query($db, $query);
+while ($row = mysqli_fetch_assoc($result)) {
+    $products[] = $row;
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,28 +54,17 @@
     <section class="cart-section">
         <div id="cart">
             <h2>Winkelwagen</h2>
-            <ul id="cart-items"></ul>
+            <ul id="cart-items">
+                <?php foreach($products as $product): ?>
+                <div style="border: 2px solid #000">
+                    <h3>naam: <?= $product['name'] ?></h3>
+                    <div>prijs: S€<?= $product['price'] ?></div>
+                </div>
+                <?php endforeach; ?>
+            </ul>
             <p>Totaal: €<span id="cart-total">0.00</span></p>
             <button onclick="checkout()">Uitchecken</button>
         </div>
-    </section>
-
-    <section class="products-section">
-        <h1>Onze Producten</h1>
-
-        <article class="product" data-id="1" data-name="Product 1" data-price="16.25">
-            <h2>Wandtegel Acuarella</h2>
-            <p><strong>Omschrijving:</strong> Formaat 10 x 40 x 1 cm, 3 M² per pak, 15 kg per M², kleur beige, vorm rechthoek, oppervlak glanzend</p>
-            <p><strong>Prijs:</strong> €16,25 per M²</p>
-            <button onclick="addToCart(1)">Toevoegen aan winkelwagen</button>
-        </article>
-
-        <article class="product" data-id="2" data-name="Product 2" data-price="29.99">
-            <h2>Product 2</h2>
-            <p><strong>Omschrijving:</strong> (Voeg hier de beschrijving toe)</p>
-            <p><strong>Prijs:</strong> €29,99</p>
-            <button onclick="addToCart(2)">Toevoegen aan winkelwagen</button>
-        </article>
     </section>
 </main>
 

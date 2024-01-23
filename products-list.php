@@ -6,15 +6,16 @@ require_once ("includes/database.php");
 /** @var mysqli $db */
 
 $products = [];
-if (isset($_GET["submit"])){
-    $search = $_GET["search"]?? "";
-    $query = "SELECT products.name, products.description, products.unit, products.price, materials.name AS material_name FROM products LEFT JOIN materials ON products.material_id = materials.id WHERE products.name LIKE '%$search%'";
+$search = mysqli_escape_string($db, $_GET['search'] ?? '');
+//if (isset($_GET["submit"])){
+//    $search = $_GET["search"]?? "";
+    $query = "SELECT products.id, products.name, products.description, products.unit, products.price, materials.name AS material_name FROM products LEFT JOIN materials ON products.material_id = materials.id WHERE products.name LIKE '%$search%'";
     $searchResult = mysqli_query($db, $query);
 
     while($row = mysqli_fetch_assoc($searchResult)) {
         $products[] = $row;
     }
-}
+//}
 
 
 
@@ -45,8 +46,9 @@ while($row = mysqli_fetch_assoc($categoriesResult)) {
 <nav>
     <img class="kiryan-logo" src="images/Logosafbeeldingen.png" alt="logo">
         <form class="search-bar" action="">
-    <input name="search" type="text" id="searchInput" placeholder="Zoek een product...">
-            <button name="submit" value="submit" type="submit">Zoeken</button>
+    <input name="search" type="text" id="searchInput" placeholder="Zoek een product..." value="<?= htmlentities($_GET['search'] ?? '') ?>">
+<!--            <button name="submit" value="submit" type="submit">Zoeken</button>-->
+            <input type="hidden" name="submit" value="submit">
         </form>
     <a href="">
         <img class="cart-logo" src="images/Kiryan B.V. Iconen winkelmand.png" alt="winkelmand">
@@ -63,23 +65,23 @@ while($row = mysqli_fetch_assoc($categoriesResult)) {
                 <section class="product-section">
                     <h2> Alle producten </h2>
                     <div class="products">
+                        <?= count($products) === 0 ? 'Geen producten gevonden' : '' ?>
                         <?php foreach($products as $product): ?>
 
-                        <article class="product-article">
+                        <form class="product-article" method="post" action="shoppingcart.php">
                             <div class="product-card">
-                                <img src="https://scontent-ams2-1.xx.fbcdn.net/v/t39.30808-6/384099332_6386599158118438_6969631507200926178_n.jpg?stp=dst-jpg_p843x403&_nc_cat=105&ccb=1-7&_nc_sid=dd5e9f&_nc_ohc=6RraxetEVwYAX_QXdKN&_nc_ht=scontent-ams2-1.xx&oh=00_AfDtXm_sefinvAfUKNP53Dl_KDvjuCwiUmkJKYu8UXEwGA&oe=65AA49C8"
-                                     alt="Acuarella-tegels">
 
                                 <h3><?= $product['name'] ?></h3>
                                 <p><?= $product['description'] ?></p>
                                 <p>Prijs: €<?= $product['price'] ?> per <?= $product['unit'] ?></p>
                                 <p> Materiaal: <?= $product['material_name'] ?></p>
                                 <div class="button-container">
-                                    <a href="" target="_blank" class="button-assignment">Meer details</a>
+                                    <input type="hidden" name="product" value="<?= $product['id'] ?>">
+                                    <button class="button-assignment" type="submit" name="submit" value="submit">Reserveren</button>
                                 </div>
                             </div>
 
-                        </article>
+                        </form>
 
                         <?php endforeach; ?>
 
