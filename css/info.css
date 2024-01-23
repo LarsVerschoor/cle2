@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #000814;
+    color: #FAF4D7;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url(../images/authentication-customer-background-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    background-color: #001d3d;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #ffd60a;
+}
+
+.navbar {
+    background-color: #003566;
+    padding: 10px;
+    text-align: center;
+}
+
+.navbar a {
+    color: #ffd60a;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+section {
+    padding: 20px;
+}
+
+.contact-form {
+    background-color: #003566;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form-group label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #ffd60a;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 96%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ffd60a;
+    border-radius: 5px;
+    background-color: #001d3d;
+    color: #FAF4D7;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #ffd60a;
+}
+
+.submit-button {
+    background-color: #ffd60a;
+    color: #001d3d;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #003566;
+    color: #ffd60a;
+}
+
+.format {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer {
+    background-color: #001d3d;
+    color: #ffd60a;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 10px;
+    margin-top: auto;
+}

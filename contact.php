@@ -17,7 +17,7 @@
     <nav class="navbar">
         <a href="index.php">Home</a>
         <a href="contact.php">Contact</a>
-        <a href="#about">About</a>
+        <a href="info.php">About</a>
         <a href="login-customer.php">Klant login</a>
         <a href="register-customer.php">Klant registreren</a>
         <a href="login-admin.php">Admin login</a>

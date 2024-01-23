@@ -10,8 +10,8 @@
 </head>
 <body>
 <nav class="navbar">
-    <a href="">link</a>
-    <a href="">link</a>
+    <a href="index.php">Home</a>
+    <a href="info.php">About</a>
     <a href="register-customer.php">Klant registreren</a>
     <a href="login-customer.php">klant login</a>
     <a href="login-admin.php">Admin login</a>
