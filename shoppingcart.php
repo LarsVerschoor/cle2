@@ -50,14 +50,10 @@
 </main>
 
 <footer>
-    <section class="contact-section">
-        <h2>Contactgegevens</h2>
-        <address>
-            <p>Kiyran B.V.</p>
-            <p>Bloklandweg 1A, 4171 KA Herwijnen</p>
-            <p>Email: info@kiryanbv.nl</p>
-        </address>
-    </section>
+            Kiyran B.V.
+            Bloklandweg 1A
+            4171 KA Herwijnen
+            info@kiryanbv.nl
 </footer>
 </body>
 
