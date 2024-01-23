@@ -40,4 +40,12 @@ section {
     padding: 20px;
 }
 
-/* Remaining styles remain unchanged */
+footer {
+    background-color: #001d3d;
+    color: #ffd60a;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 10px;
+    margin-top: auto;
+}
