@@ -21,6 +21,7 @@ header {
 
 h1 {
     color: #ffd60a;
+    margin-bottom: 0;
 }
 
 .navbar {
@@ -36,67 +37,8 @@ h1 {
     font-size: 16px;
 }
 
-section {
+main {
     padding: 20px;
-}
-
-.contact-form {
-    background-color: #003566;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    max-width: 400px;
-    margin: 0 auto;
-    margin-top: 20px;
-}
-
-.form-group {
-    margin-bottom: 15px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.form-group label {
-    display: block;
-    font-size: 16px;
-    margin-bottom: 5px;
-    color: #ffd60a;
-}
-
-.form-group input,
-.form-group textarea {
-    width: 96%;
-    padding: 8px;
-    font-size: 14px;
-    border: 1px solid #ffd60a;
-    border-radius: 5px;
-    background-color: #001d3d;
-    color: #FAF4D7;
-    transition: border-color 0.3s;
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-    outline: none;
-    border-color: #ffd60a;
-}
-
-.submit-button {
-    background-color: #ffd60a;
-    color: #001d3d;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.submit-button:hover {
-    background-color: #003566;
-    color: #ffd60a;
 }
 
 .format {
@@ -104,6 +46,17 @@ section {
     display: flex;
     align-items: center;
     flex-direction: column;
+    text-align: center;
+}
+
+.format p {
+    margin: 15px 0;
+    line-height: 1.5;
+}
+
+.format h2 {
+    color: #ffd60a;
+    margin-top: 20px;
 }
 
 footer {
@@ -114,4 +67,59 @@ footer {
     display: flex;
     padding: 10px;
     margin-top: auto;
+}
+
+.contact-section {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contact-section h2 {
+    margin-bottom: 10px;
+}
+
+.contact-section p {
+    margin-bottom: 5px;
+}
+
+.contact-info {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+.contact-form {
+    background-color: #003566;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.table-container {
+    margin-top: 20px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.table th, .table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #001d3d;
+    color: #ffd60a;
+}
+
+.table tbody tr:last-child td {
+    border-bottom: none;
 }
